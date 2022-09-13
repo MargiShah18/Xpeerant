@@ -1,0 +1,625 @@
+{% extends 'base/main.html' %}
+{% block css %}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+
+a,
+img {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+a,
+.btn {
+    transition: all .4s;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: 0px;
+}
+
+a:hover {
+    color: #e2b70a;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Header */
+.top-header {
+    position: relative;
+    z-index: 10;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    transition: all .4s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+header .navbar-light .navbar-nav .nav-link.active,
+header .navbar-light .navbar-nav .show>.nav-link,
+header .navbar-light .navbar-nav .nav-link:focus,
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #e2b70a;
+}
+
+header .navbar-light .navbar-nav .header-btns {
+    background-color: #fff;
+    box-shadow: -1px 3px 6px rgba(0, 0, 0, .2);
+    min-width: 90px;
+    height: 40px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px 5px;
+    transition: all .4s;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+    padding: 0;
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Banner */
+.banner-section {
+    position: relative;
+}
+
+.carousel-caption {
+    height: 100%;
+    text-align: left;
+    z-index: 9;
+}
+
+.banner-content {
+    color: #fff;
+    max-width: 550px;
+}
+
+.banner-content h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.banner-content h1 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    font-weight: 700;
+    font-family: 'arial';
+
+}
+
+#login {
+    color: rgb(254, 254, 254);
+}
+
+#id {
+    color: yellow;
+}
+
+.align {
+    align-items: flex-start;
+}
+
+.padding {
+    padding-left: 13%;
+}
+
+.yellow {
+    color: yellow;
+    font-weight: 600;
+}
+
+.blue {
+    color: rgb(2, 2, 29);
+}
+
+.right {
+    padding-top: 3%;
+    padding-right: 13%;
+}
+
+.width {
+    width: 70px;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+.a {
+    text-align: center;
+    font-size: small;
+}
+
+.bg-blue {
+    background-color: rgb(13, 13, 76);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.padding-card {
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.white-bg {
+    background-color: rgb(255, 254, 254);
+}
+
+.apad {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 5%;
+
+    /* background-image: url(dots.png); */
+}
+
+.img-bg {
+    background-image: url(circle-bg.png);
+    background-repeat: no-repeat;
+}
+
+.enhance {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 10px rgb(213, 215, 216);
+}
+
+.box-shadow-a {
+    box-shadow: 10px 10px 10px rgb(243, 244, 245);
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.rounded-xl {
+    border-radius: 1.9rem;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.blue {
+    color: rgb(13, 13, 76);
+}
+
+.pad {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 5%;
+    background-image: url(dots.png);
+}
+
+.con-detail {
+    height: 70%;
+    width: 80%;
+    z-index: 1;
+    top: 67px;
+    right: 101px;
+}
+.contact-title {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
+.contact-sub-title {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+
+}
+header .navbar-light .navbar-nav .nav-link.active, header .navbar-light .navbar-nav .show > .nav-link,
+header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
+    color:rgb(243, 219, 0); text-decoration:underline;
+}
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+      }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+{% endblock %}
+
+{%block content%}
+<!-- corousal -->
+{%load static%}
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    {% for i in range %}
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="{{i}}" class="{% if forloop.first %} active {% endif %}"></button>
+    {% endfor %}
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="banner-section carousel slide carousel-inner" >
+      {% for i in crousal %}
+         {% if forloop.first %}
+    <div class="carousel-item active ">
+        {% else %}
+
+      <div class="carousel-item">
+        {% endif %}
+      <img src='/media/{{i.image}}' alt='{{i.imagename}}' class="d-block w-100 img-fluid">
+      <div class="carousel-caption d-flex align-items-center">
+              <div class="container">
+                <div class="banner-content">
+                    <h1> {{i.imagetext}}</h1>
+                    <p style="text-align:left ;">{{i.desc}}</p>
+                    <button class="badge rounded-pill bg-warning text-light border-0" style="height:40px ;width: 150px; "><a href="{{i.link}}" style="color:white"> LEARN MORE</a></button>
+                </div>
+              </div>
+             </div>
+    </div>
+{% endfor %}
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                </svg>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill " viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg>
+  </button>
+</div>
+  </div>
+</div>
+
+
+ <!-- 2 sec -->
+    <div class="container-fluid pb-5"
+        style="background-image: url({% static 'base/rectangle.png' %}); background-repeat: no-repeat; background-position:center right; ">
+        {% for i in about %}
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 pt-5 padding">
+                <img src='/media/{{i.ac_image}}'   class="img-fluid ">
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 right">
+                <p class="text-warning enhance"><b>{{i.ac_title}}</b></p>
+                <h1 class="blue" style="font-weight:30%;">{{i.ac_subtitle}}</h1>
+                <blockquote class="blue">
+                    <p class="pt-3">{{i.ac_desc_p1}}</p>
+                    <p class="pt-3">{{i.ac_desc_p1}}</p>
+                </blockquote>
+                <button type="button" class="btn rounded-pill btn-warning">
+                    <a class="badge rounded-pill btn " id="login" href='{{i.ac_link}}'>View More</a>
+                </button>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+
+ <!-- our specialities -->
+    <div style= "background-image: url({% static 'base/dots.png' %}); background-color: rgba(182, 217, 235, 0.311);">
+        <div class="container-fluid pb-2" style="text-align:center;color:rgb(14, 14, 66)">
+
+          <h1 class="pt-5" style="color: rgb(28, 28, 85);">OUR SPECIALITY</h1>
+
+        </div>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 p-lg-5 pt-5">
+
+                {% for i in spec %}
+          <div class="col mb-4 pt-5 pb-5">
+
+            <div class="card">
+              <img src=' /media/{{i.sp_image}}' class="card-img-top position-absolute top-0 start-50 translate-middle "
+                alt="..." style="height: 100px;width: 100px;">
+
+              <div class="card-body pt-5">
+                <h5 class="card-title text-center">{{i.sp_title}}</h5>
+                <p class="card-text text-center">{{i.sp_desc_p1}} </p>
+                <a class="nav-link" href='{{i.sp_link}}'><button
+                    class="badge rounded-pill border-0 text-light position-absolute top-100 start-50 translate-middle"
+                    style="height:40px ;width: 150px; background-color:{{i.link_color}} ">Learn More</button></a>
+
+              </div>
+            </div>
+          </div>
+            {%endfor%}
+        </div>
+      </div>
+
+<!-- contact us -->
+    <div class="container-fluid apad img-bg contact" style="background-image: url({% static 'base/circle-bg.png' %}); ">
+
+        <h2 class="center-align blue">CONTACT US</h2>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 pt-5 pb-5">
+                <div class="card-body border rounded-xl d-flex flex-column align-items-center pt-5 white-bg ">
+                    <form>
+                        <div class="row g-6 mb-3 mt-3 padding-card">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name" name="name">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" placeholder="Phone" name="pswd">
+                            </div>
+                        </div>
+                        <div class="row g-6 mb-3 mt-3 padding-card">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" name="email">
+                            </div>
+                            <div class="col ">
+                                <input type="text" class="form-control" placeholder="Inquiry for" name="pswd">
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-3 padding-card">
+                            <textarea class="form-control" rows="5" id="comment" name="message"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <button type="button" class="btn rounded-pill btn-warning">
+                            <a class="badge rounded-pill btn " id="submit" href="#">SUBMIT</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-9">
+                <div class="container ">
+                      {%for i in condetails%}
+                    <div class="card bg-blue rounded-xl  con-detail">
+
+                        <div class="card-body ml-4">
+
+                            <div>
+                                <h4 class="contact-title">
+                                    CONTACT DETAILS</h4>
+                            </div>
+                            <span class="contact-sub-title"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-telephone-fill yellow"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg> {{i.cd_con1}}</span>
+
+                            <span class="contact-sub-title"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-phone-fill yellow" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                                </svg> {{i.cd_con2}}</span>
+
+                            <h4 class="contact-title">
+                                CORPORATE SUPPORT</h4>
+                            <h5 class="contact-title">
+                                Chief Executive Officer<br>{{i.cd_ceoname}}</h5>
+                        </div>
+
+                        <span class="contact-sub-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill yellow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            {{i.cd_ceocon1}} | Ext.{{i.cd_ext}}<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill yellow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                             {{i.cd_ceocon2}}</span>
+
+
+                        <span class="contact-sub-title"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-envelope-fill yellow" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg>
+                           {{i.cd_email}}</span>
+
+
+                    </div>
+                    {%endfor%}
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+<!-- logos -->
+    <div class="container-fluid bg-warning pl-5">
+        <div class="row row-cols-1 row-cols-md-5 bg-warning pt-5 pl-5 pb-3 ">
+            {% for i in log%}
+            <div class="col mb-4">
+                <div class="card ">
+                    <div class="card-body white-bg justify-content-center shadow ">
+                        <img src='/media/{{i.sp_logo}}' style="height: 60px; width: 80%;">
+                    </div>
+                </div>
+            </div>
+           {%endfor%}
+        </div>
+    </div>
+    </div>
+
+{%endblock%}

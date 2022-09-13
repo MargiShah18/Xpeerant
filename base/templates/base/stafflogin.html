@@ -1,0 +1,33 @@
+{% extends 'base/main.html' %}
+{% block title%} Staff Login {% endblock %}
+{% block css %}
+
+{% endblock %}
+{%block content%}
+{%load static%}
+
+
+<form class="pb-3" action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src=' {% static "base/avatar-login.png" %}'  alt="Avatar" class="avatar" >
+  </div>
+<h1 class="pt-5" style="color: rgb(28, 28, 85);text-align:center;">Staff Login</h1>
+  <div class="container">
+    <label ><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button class="button rounded-pill bg-warning" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button  type="button" style="background-color: rgb(28, 28, 85)" class="cancelbtn button rounded-pill">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+{%endblock%}

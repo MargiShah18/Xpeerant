@@ -1,0 +1,109 @@
+{% extends 'base/main.html' %}
+{% block title%} About Us{% endblock %}
+{%block content%}
+{%load static%}
+<div >
+        <div class="container-fluid pb-5" style="background-color:#ffc107!important ; text-align:center;color:rgb(14, 14, 66)">
+
+            <div class="about-section container" >
+                <h1 class="pt-5" style="color: rgb(28, 28, 85);">About Us</h1>
+                   <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magni repellendus non. Dolores fugiat assumenda iste, aspernatur, impedit accusantium, doloremque quo hic ut consequatur ipsa quia! Saepe iusto adipisci aliquid, eaque ratione mollitia temporibus eos. Sed, expedita natus consequuntur maiores a quos odit ex esse aperiam officia illo, quam repellendus laboriosam voluptates quasi dolore provident amet consequatur voluptate hic inventore exercitationem placeat aut! Sint reprehenderit dolor minima eveniet aperiam mollitia ab laborum ipsa. Cum et natus suscipit! Illo perferendis impedit quas quod, vero eius eveniet veritatis ea! Odio rem nihil earum ut tempora! Magnam blanditiis ipsa tempora harum quo iure.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magni repellendus non. Dolores fugiat assumenda iste, aspernatur, impedit accusantium, doloremque quo hic ut consequatur ipsa quia! Saepe iusto adipisci aliquid, eaque ratione mollitia temporibus eos. Sed, expedita natus consequuntur maiores a quos odit ex esse aperiam officia illo, quam repellendus laboriosam voluptates quasi dolore provident amet consequatur voluptate hic inventore exercitationem placeat aut! Sint reprehenderit dolor minima eveniet aperiam mollitia ab laborum ipsa. Cum et natus suscipit! Illo perferendis impedit quas quod, vero eius eveniet veritatis ea! Odio rem nihil earum ut tempora! Magnam blanditiis ipsa tempora harum quo iure.</p>
+            </div>
+
+
+        </div>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 p-lg-5 pt-5">
+          <div class="col mb-4 pt-5 pb-5">
+            <div class="card">
+              <img src=' {% static "base/our speciality-group1.png" %}' class="card-img-top position-absolute top-0 start-50 translate-middle "
+                alt="..." style="height: 100px;width: 100px;">
+
+              <div class="card-body pt-5">
+                <h5 class="card-title text-center">Algo/Digital Designe</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+                  praesentium nam eaque provident temporibus. Velit molestias veritatis illo quae atque, laboriosam deleniti
+                  perspiciatis nostrum quos. </p>
+                <a class="nav-link" href="#"><button
+                    class="badge rounded-pill border-0 bg-warning text-light position-absolute top-100 start-50 translate-middle"
+                    style="height:40px ;width: 150px;">LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 pt-5 pb-5">
+            <div class="card">
+              <img src=' {% static "base/our speciality-group 2.png" %}'
+                class="card-img-top mx-auto d-block position-absolute top-0 start-50 translate-middle" alt="..."
+                style="height: 100px;width: 100px;">
+              <div class="card-body pt-5">
+                <h5 class="card-title text-center">Functional Verification</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                  necessitatibus aut officiis et, blanditiis maxime? Voluptates quibusdam reiciendis reprehenderit
+                  consectetur, autem accusamus? </p>
+                <a class="nav-link" href="#"><button
+                    class="badge rounded-pill border-0 bg-warning text-light position-absolute top-100 start-50 translate-middle"
+                    style="height:40px ;width: 150px;">LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 pt-5 pb-5">
+            <div class="card ">
+              <img src=' {% static "base/our speciality-group3  yellow.png" %}'
+                class="card-img-top mx-auto d-block position-absolute top-0 start-50 translate-middle" alt="..."
+                style="height: 100px;width: 100px;">
+              <div class="card-body pt-5">
+                <h5 class="card-title text-center">Physical Designe</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rem
+                  laudantium natus, eum soluta amet quisquam voluptatem molestias voluptatum delectus aliquid illum a
+                  voluptatibus quasi veniam odio quas?</p>
+                <a class="nav-link" href="#"><button
+                    class="badge rounded-pill border-0 text-light position-absolute top-100 start-50 translate-middle"
+                    style="background-color: rgb(29, 29, 91); height:40px ;width: 150px;">LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 pt-5 pb-5">
+            <div class="card">
+              <img src=' {% static "base/our speciality-group 4.png" %}'
+                class="card-img-top mx-auto d-block position-absolute top-0 start-50 translate-middle" alt="..."
+                style="height: 100px;width: 100px;">
+              <div class="card-body pt-5">
+                <h5 class="card-title text-center">Mask Designe</h5>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae
+                  nulla ut rem minus, obcaecati possimus sequi fuga iste ipsam commodi! Fuga totam delectus, obcaecati quionsrs .
+                </p>
+                <a class="nav-link" href="#"><button
+                    class="badge rounded-pill border-0 bg-warning text-light position-absolute top-100 start-50 translate-middle"
+                    style="height:40px ;width: 150px;">LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="container-fluid pb-5"
+        style="background-image: url({% static 'base/rectangle.png' %}); background-repeat: no-repeat; background-position:center right; ">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12 pt-5 padding">
+                <img src= ' {% static "base/about-img.jpg" %}'  class="img-fluid ">
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 right">
+                <p class="text-warning enhance"><b>Welcome to Xpeerant</b></p>
+                <h1 class="blue" style="font-weight:30%;">GIVE US THE OPPORTUNITY TO WORK FOR YOU</h1>
+                <blockquote class="blue">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus fuga, eum eos tempore
+                        voluptatibus nulla, voluptatum enim alias temporibus voluptate magni molestiae ad iure quis odio
+                        dolorem culpa, officiis rerum officia quae sint. Nisi atque odio ullam, aspernatur ducimus quo
+                        iure impedit nihil laborum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione porro incidunt commodi
+                        unde? Sapiente quibusdam aperiam dolores mollitia. Tenetur optio obcaecati ipsam, laboriosam
+                        harum impedit est velit iusto consequuntur quos autem recusandae minus unde nihil alias earum
+                        similique! Maiores totam delectus nesciunt beatae dolore.</p>
+                </blockquote>
+                <button type="button" class="btn rounded-pill btn-warning">
+                    <a class="badge rounded-pill btn " id="login" href="#">VIEW MORE</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+{%endblock%}

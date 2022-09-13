@@ -1,0 +1,510 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .the-afro-content {
+        padding-right: 75px;
+    }
+    .blog-row > * {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    /*#banner-carousel .carousel-item > img {
+        height: 100vh;
+    } */
+    .contact
+    {
+        height: 725px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 80%;
+        z-index:1;
+        top: 67px;
+        right: 101px;
+    }
+    
+}
+
+@media (max-width: 1600px) {
+    
+    .hair-trends-left {
+        transform: translateX(-20px);
+    }
+    .contact
+    {
+        height: 725px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 80%;
+        z-index: 1;
+        top: 67px;
+        right: 101px;
+    }
+    
+}
+
+@media (max-width: 1440px) {    
+    .hair-slick-slider .slick-list {
+        padding: 0 100px 0 0 !important;
+    }
+    .contact
+    {
+        height: 725px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 125%;
+        z-index: 1;
+        top: 67px;
+        right: 101px;
+    }
+    .apad {
+        padding-left: 10%;
+        padding-right: 13%;
+        padding-top: 5%;
+    
+        /* background-image: url(dots.png); */
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+    .contact
+    {
+        height: 725px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hair-trends-left {
+        transform: translateX(0px);
+        padding-left: 20px;
+    }
+    .contact
+    {
+        height: 600px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 120%;
+        z-index: 1;
+        top: 67px;
+        right: 75px;
+    }
+    .apad {
+        padding-left: 14%;
+        padding-right: 13%;
+        padding-top: 5%;
+    
+        /* background-image: url(dots.png); */
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .carr {
+        height: 70% !important; 
+        width: 80% !important; 
+        z-index: 0 !important; 
+        /* top: 67px; */
+        /* right: 101px; */
+        margin-bottom: 60px;
+    } 
+    .contact
+    {
+        height: 600px;
+    } 
+    .con-detail {
+        height: 70%;
+        width: 80%;
+        z-index: 1;
+        top: 67px;
+        right: 101px;
+    }
+    
+    
+  }
+
+@media (max-width:991px) {
+    
+    .top-header {
+        height: 60px;
+        align-items: flex-start;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    header .navbar-light .navbar-nav {
+        align-items: flex-start;
+    }
+    #navbar-main {
+        background-color: #fff;
+        margin-left: -20px;
+        max-width: 480px;
+        box-shadow: 0 8px 8px #00000024;
+        margin-top: 7px;
+    }
+    header .navbar-light .navbar-nav .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+    header .navbar-light .navbar-nav .nav-item:last-child {
+        border-bottom: 0;
+    }
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 12px;
+        color: #A0AEC0;
+        margin: 0;
+        padding: 15px 50px;
+        text-transform: uppercase;        
+    }
+    header .navbar-light .navbar-nav .header-btns {
+        border-radius: 0;
+        background-color: transparent;
+        color: #A0AEC0;
+        box-shadow: none;
+        text-align: left;
+        height: auto;
+    }
+    header .navbar-light .navbar-nav .nav-link.active, header .navbar-light .navbar-nav .show > .nav-link, header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:hover {
+        color: #fff;
+        background-color: #A0AEC0;
+    }
+    .menu-line-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 30px;
+        height: 20px;
+        transition: transform 250ms ease;
+        cursor: pointer;
+    }
+    .menu-line-icon span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #ED64A6;
+        float: left;
+        transform-origin: center center;
+        transition: transform 250ms ease;
+        z-index: 200;
+        border-radius: 100px;
+    }
+    .menu-line-icon span:nth-of-type(1) {
+        transform: translateY(-5px);
+    }
+    .menu-line-icon span:nth-of-type(3) {
+        transform: translateY(5px);
+    }    
+    .collapse-menu-show .menu-line-icon span:nth-of-type(1) {
+        transform: translateY(1px) rotate(45deg);
+    }
+    .collapse-menu-show .menu-line-icon span:nth-of-type(2) {
+        display: none;
+    }
+    .collapse-menu-show .menu-line-icon span:nth-of-type(3) {
+        transform: translateY(-1px) rotate(-45deg);
+    }  
+    .hair-trends-section {
+        padding-bottom: 130px !important;
+    }  
+    .hair-trends-left {
+        transform: translateX(0px);
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 30px;
+        transform: none;
+    }
+    .hair-trends-section .btn-pink {
+        position: absolute;
+        bottom: 40px;
+    }
+
+
+    .the-afro-content {
+        margin-bottom: 20px;
+    }
+    .hairstylist-img {
+        margin-bottom: 40px;
+    }
+
+    .contact
+    {
+        height: 600px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 80%;
+        z-index: 1;
+        top: 67px;
+        right: 101px;
+    }
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .search-main .select2-container--default .select2-selection--single, .location-main .select2-container--default .select2-selection--single {
+        width: 270px;
+        padding-left: 35px;
+    }
+    .contact
+    {
+        height: 1000px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 139%;
+        z-index: 1;
+        top: 67px;
+       left: 2px;
+    }
+    .apad {
+        /* padding-left: 13%;
+        padding-right: 13%; */
+        padding: inherit;
+    
+        /* background-image: url(dots.png); */
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar-brand img {
+        max-width: 130px;
+    }
+    #navbar-main {
+        max-width: 360px;
+        margin-top: 12px;
+    }   
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .carousel-caption {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfafd5+0,9e81c2+100 */
+        background: #bfafd5; /* Old browsers */
+        background: -moz-linear-gradient(top,  #bfafd5 0%, #9e81c2 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #bfafd5 0%,#9e81c2 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #bfafd5 0%,#9e81c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfafd5', endColorstr='#9e81c2',GradientType=0 ); /* IE6-9 */
+        height: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-top: 60px;
+        padding: 70px 30px 60px;
+    }
+    .banner-content h5 {
+        font-size: 16px;
+    }
+    .banner-content h1 {
+        font-size: 48px;
+    }
+    .banner-content p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+    .search-main .select2-container--default .select2-selection--single, .location-main .select2-container--default .select2-selection--single {
+        border: none;
+        border-radius: 7px;        
+        width: 100%;
+    }
+    .search-main, .location-main, .banner-search-main .search-btn,
+    .subscribe-mail, .subscribe-form .search-btn {       
+        width: 100%;
+    }
+    .location-main .select2-container, .search-main .select2-container {
+        width: 280px !important;
+    } 
+    .banner-section .btn-pink, .subscribe-form .btn-pink {
+        border-radius: 7px;       
+        width: 100%;
+        margin-top: 10px;
+    }
+    .popular-tag, .scroll-down-arrow {
+        display: none;
+    }
+    .banner-content {
+        max-width: 280px;
+        margin: auto;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .section-title .small {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .hair-trends-section .section-title {
+        margin-bottom: 10px;
+    }
+    .hair-slick-slider .slick-list {
+        padding: 0 120px 0 0 !important;
+    }
+    .hair-slick-slider .slick-slide {
+        margin: 0 15px;
+    }
+    .trends-thumbs img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .trends-box-content {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .how-does-section {
+        text-align: center;
+    }
+    .number-col::after {
+        display: none;
+    }
+    .how-does-row:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    .how-does-content {
+        margin-top: 20px;
+    }
+    .number-col {
+        text-align: right;
+    }
+    .testimonials-section {
+        padding-bottom: 70px;
+    }
+    .testimonials-box {
+        padding: 30px 20px;
+    }
+    .carousel-indicators [data-bs-target] {       
+        width: 9px;
+        height: 9px;
+        margin-right: 3px;
+        margin-left: 3px;
+        background-color: transparent;
+        border: 2px solid #ED64A6;
+        opacity: 1;
+        border-radius: 100%;
+    }
+    .carousel-indicators .active {
+        background-color: #ED64A6 !important;
+    }
+    .carousel-indicators {
+        bottom: -80px;
+    }
+    .quotes i {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .client-picarea {
+        margin-top: 25px;
+    }
+    .hairstylist-section {
+        padding: 80px 0;
+    }
+    .blog-single {
+        max-width: 340px;
+        margin: 0 auto 40px;
+    }
+    .blog-single h3 {
+        font-size: 18px;
+    }
+    .blog-see-more { 
+        font-size: 18px;   
+        max-width: 340px;
+        margin: auto;
+        display: block;
+    }
+    .subscribe-form {
+        max-width: 280px;
+    }
+    .subscribe-section h3 {
+        font-size: 18px;
+    }
+    footer {
+        padding: 40px 0 120px;
+    }
+    footer h5 {
+        font-size: 14px;       
+    }
+    .footer-link a {
+        margin-top: 10px;
+    }    
+    .footer-col1 h5, .footer-col3 h5 {
+        margin-bottom: 0;
+    }
+    .social-icons {
+        margin-bottom: 30px;
+    }
+    .copyright-area {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+    }
+    .footer-logo {
+        margin: 30px 0 10px;
+        max-width: 140px;
+    }
+    .contact
+    {
+        height: 1035px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 100%;
+        z-index: 1;
+        top: 67px;
+       left: 10px;
+    }
+    .apad {
+        /* padding-left: 13%;
+        padding-right: 13%; */
+        padding: inherit;
+    
+        /* background-image: url(dots.png); */
+    }
+
+}
+
+@media (max-width:480px) {
+    .hair-slick-slider .slick-list {
+        padding: 0 80px 0 0 !important;
+    }
+    #navbar-main {
+        max-width: 280px;
+    }
+    .contact
+    {
+        height: 1035px;
+    }
+    .con-detail {
+        height: 70%;
+        width: 110%;
+        z-index: 1;
+        top: 67px;
+       left: -7px;
+    }
+    .apad {
+        /* padding-left: 13%;
+        padding-right: 13%; */
+        padding: inherit;
+    
+        /* background-image: url(dots.png); */
+    }
+}
+
+
+/*font-family: 'Fira Sans Extra Condensed', sans-serif;*/
